@@ -1,0 +1,89 @@
+new load.home1
+~ bus1=home1
+~ phases=1
+~ kv=0.23
+~ model=5
+~ kW=5.0
+~ pf=1
+~ daily=home1shape
+
+new load.home2  
+~ bus1=home2  
+~ phases=1 
+~ kv=0.23 
+~ kw=5.2
+~ model=1
+~ pf=1
+~ daily=home2shape
+
+new load.home3  
+~ bus1=home3  
+~ phases=1 
+~ kv=0.23 
+~ kw=5.5
+~ model=1
+~ pf=1
+~ daily=home3shape
+
+new load.home4  
+~ bus1=home4  
+~ phases=1 
+~ kv=0.23 
+~ kw=5.1
+~ model=1
+~ pf=1
+~ daily=home4shape
+
+new load.home5  
+~ bus1=home5  
+~ phases=1 
+~ kv=0.23 
+~ kw=5.2
+~ model=1
+~ pf=1
+~ daily=home5shape
+
+new load.home6  
+~ bus1=home6 
+~ phases=1 
+~ kv=0.23 
+~ kw=5.5
+~ model=1
+~ pf=1
+~ daily=home6shape
+
+new load.home7  
+~ bus1=home7  
+~ phases=1 
+~ kv=0.23 
+~ kw=5.1
+~ model=1
+~ pf=1
+~ daily=home7shape
+
+new load.home8  
+~ bus1=home8  
+~ phases=1 
+~ kv=0.23 
+~ kw=5.2
+~ model=1
+~ pf=1
+~ daily=home8shape
+
+new load.home9  
+~ bus1=home9  
+~ phases=1 
+~ kv=0.23 
+~ kw=5.5
+~ model=1
+~ pf=1
+~ daily=home9shape
+
+new load.home10 
+~ bus1=home10 
+~ phases=1 
+~ kv=0.23 
+~ kw=5.2
+~ model=1
+~ pf=1
+~ daily=home10shape

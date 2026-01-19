@@ -1,0 +1,49 @@
+
+!  Residential Feeder (Single-Phase, 0.23 kV) Frequency: 50 Hz 
+
+Clear
+Set DefaultBaseFrequency=50
+
+New Circuit.LV
+~ Bus1=source
+~ BasekV=0.23
+~ pu=1.0
+~ phases=1
+
+Edit Vsource.Source
+~ Bus1=source
+~ BasekV=0.23
+~ pu=1.0
+~ phases=1
+
+
+!Related Files
+Redirect "loadShapes.dss"
+Redirect "lines.dss"
+Redirect "loads.dss"
+Redirect "generators.dss"
+BusCoords "buscoords.csv"
+
+
+!Simulation Parameters
+Set Mode=Daily
+Set StepSize=1m
+Set Number=1440
+
+Solve
+
+!Reports
+
+Show Elements
+Show Voltages Bus=source
+Show Voltages Bus=home2
+Show Voltages LN Nodes
+Show Currents Elem
+Show Powers kVA Elem
+Show Losses
+Show Taps
+Show Powers Element=PVSystem.pv1
+Show Powers Element=Storage.mobilebat
+
+!Plot
+Plot Circuit Phases=1

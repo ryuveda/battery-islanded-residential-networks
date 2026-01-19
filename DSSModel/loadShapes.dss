@@ -1,0 +1,13 @@
+new loadshape.home1shape  npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=1, header=yes)
+new loadshape.home2shape  npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=2, header=yes)
+new loadshape.home3shape  npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=3, header=yes)
+new loadshape.home4shape  npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=4, header=yes)
+new loadshape.home5shape  npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=5, header=yes)
+new loadshape.home6shape  npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=6, header=yes)
+new loadshape.home7shape  npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=7, header=yes)
+new loadshape.home8shape  npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=8, header=yes)
+new loadshape.home9shape  npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=9, header=yes)
+new loadshape.home10shape npts=1440 interval=1 mult=(file=home_shapes_1min.csv, col=10, header=yes)
+
+new loadshape.pvshape1 npts=1440 interval=1 mult=(file=pvshape1_1min.csv)
+new loadshape.pvshape2 npts=1440 interval=1 mult=(file=pvshape2_1min.csv)

@@ -1,0 +1,140 @@
+new line.main
+~ bus1=source
+~ bus2=jr1
+~ phases=1
+~ length=0.6096
+~ units=km
+~ r1=0.6
+~ x1=0.1
+
+! JR1 -> JR2 main line
+new line.sw1
+~ bus1=jr1
+~ bus2=jr2
+~ phases=1
+~ length=0.6096
+~ units=km
+~ r1=0.06
+~ x1=0.1
+~ switch=yes
+
+
+! JR2 upper part (home1-2-3)
+new line.sw2
+~ bus1=jr2
+~ bus2=jr3
+~ phases=1
+~ length=0.3048
+~ units=km
+~ r1=0.0001
+~ x1=0.0001
+~ switch=yes
+
+new line.l_home1 bus1=jr3 bus2=home1 phases=1 length=0.1524 units=km r1=0.6 x1=0.1
+new line.l_home2 bus1=jr3 bus2=home2 phases=1 length=0.1524 units=km r1=0.6 x1=0.1
+new line.l_home3 bus1=jr3 bus2=home3 phases=1 length=0.1524 units=km r1=0.6 x1=0.1
+
+
+! JR2 middle part (home4, home6, home7, home5)
+new line.sw3
+~ bus1=jr2
+~ bus2=jr4
+~ phases=1
+~ length=0.09144
+~ units=km
+~ r1=0.0001
+~ x1=0.0001
+~ switch=yes
+
+new line.l_home4 bus1=jr4 bus2=home4 phases=1 length=0.09144 units=km r1=0.6 x1=0.1
+
+new line.sw4
+~ bus1=jr4
+~ bus2=jr5
+~ phases=1
+~ length=0.09144
+~ units=km
+~ r1=0.0001
+~ x1=0.0001
+~ switch=yes
+
+new line.l_home6 bus1=jr5 bus2=home6 phases=1 length=0.09144 units=km r1=0.6 x1=0.1
+new line.l_home7 bus1=jr5 bus2=home7 phases=1 length=0.09144 units=km r1=0.6 x1=0.1
+
+new line.sw5
+~ bus1=jr5
+~ bus2=home5
+~ phases=1
+~ length=0
+~ units=km
+~ r1=0.0001
+~ x1=0.0001
+~ switch=yes
+
+
+! JR2 lower part  (home8-home9-home10)
+new line.sw6
+~ bus1=jr2
+~ bus2=jr6
+~ phases=1
+~ length=0
+~ units=km
+~ r1=0.0001
+~ x1=0.0001
+~ switch=yes
+
+new line.l_home8 bus1=jr6 bus2=home8 phases=1 length=0.1524 units=km r1=0.6 x1=0.1
+new line.l_home9 bus1=jr6 bus2=home9 phases=1 length=0.1524 units=km r1=0.6 x1=0.1
+
+new line.sw7
+~ bus1=jr6
+~ bus2=home10
+~ phases=1
+~ length=0.1524
+~ units=km
+~ r1=0.0001
+~ x1=0.0001
+~ switch=yes
+
+
+new line.bat_line
+~ bus1=mobile_bs
+~ bus2=joint_A
+~ phases=1
+~ length=0
+~ units=km
+~ r1=0.0001
+~ x1=0.0001
+~ switch=yes
+
+new line.mbs_s1
+~ bus1=joint_A
+~ bus2=jr2
+~ phases=1
+~ length=0
+~ units=km
+~ r1=0.0001
+~ x1=0.0001
+~ switch=yes
+~ enabled=no
+
+new line.mbs_s2
+~ bus1=joint_A
+~ bus2=jr5
+~ phases=1
+~ length=0
+~ units=km
+~ r1=0.0001
+~ x1=0.0001
+~ switch=yes
+~ enabled=no
+
+
+new vsource.dummy_1
+~ bus1=joint_A
+~ phases=1
+~ basekv=0.23
+~ pu=1.0
+~ r1=0.01
+~ x1=0.01
+~ enabled=no

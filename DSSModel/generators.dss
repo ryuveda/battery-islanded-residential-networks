@@ -1,0 +1,26 @@
+
+new pvsystem.pv1 
+~  bus1=mobile_bs 
+~  phases=1 kV=0.23 
+~  kVA=40 
+~  pmpp=50 
+~  daily=pvshape2 
+~  irradiance=1 
+~  enabled=yes 
+~  model=1 
+~ pf=1
+
+new storage.mobilebat
+~ bus1=mobile_bs
+~ phases=1
+~ kV=0.23
+~ kWRated=20
+~ kWhRated=300
+~ %Stored=40
+~ %Reserve=20
+~ dispmode=external
+~ state=idling
+~ %EffCharge=100 
+~ %EffDischarge=100
+
+
